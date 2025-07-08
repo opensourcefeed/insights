@@ -9,7 +9,7 @@ operating systems."
   <div class="row stories">
     {% for post in paginator.posts %}
     <div class="col-md-4">
-      <a href="{{post.url}}">
+        <a href="{{ post.url | prepend: site.baseurl }}">
         <div class="card">
           <img alt="{{post.title}}" src="//images.weserv.nl/?url={{ site.url | replace: 'https://','' | replace: 'https://','' }}{{ post.image }}&w=400&output=jpg" />
           <h3 class="card-title">{{ post.title }}</h3>
