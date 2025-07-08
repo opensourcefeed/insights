@@ -1,0 +1,42 @@
+title: OpenSourceFeed
+email: niyasmonc@gmail.com
+description: >-
+  Explore expert-written technical articles, tutorials, and guest posts on Beyond Open Source - a knowledge hub by opensourcefeed.org beyond the scope of open source.
+baseurl: '/insights'
+url: 'https://www.opensourcefeed.org'
+caption: Technical Insights, Guest Posts & More
+twitter_username: opensourcefeed
+github_username: opensourcefeed
+markdown: kramdown
+theme: minima
+exclude:
+  - Gemfile
+  - Gemfile.lock
+permalink: ':title/'
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-redirect-from
+twitter:
+  username: opensourcefeed
+facebook:
+  publisher: opensourcefeed
+social:
+  name: OpenSourceFeed
+  links:
+    - 'https://plus.google.com/b/114426521113195641057/'
+    - 'https://twitter.com/opensourcefeed'
+    - 'https://www.facebook.com/opensourcefeed'
+webmaster_verifications:
+  google: 8-DkVd0YN5zpN1NpF6X4SMnRckVNQgEu4O8Uk9cU_2c
+paginate: 18
+paginate_path: '/blog/:num/'
+future: true
+defaults:
+  - 
+    scope:
+      path: ""
+    values:
+      image: /assets/images/meta/logo-collage.jpg
