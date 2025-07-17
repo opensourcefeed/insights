@@ -3,7 +3,7 @@ layout: post
 title: "Secure and Professional: Why ClickMeeting Is the Webinar App for Business"
 categories: [web conferencing, webinar software]
 tags: [ClickMeeting, webinar, security, virtual meetings, business tools]
-meta_description: Discover why ClickMeeting stands out as a secure and professional webinar solution for businesses of all sizes.
+description: Discover why ClickMeeting stands out as a secure and professional webinar solution for businesses of all sizes.
 image: /insights/assets/images/post-images/webinar.webp
 ---
 
