@@ -7,7 +7,7 @@ description: Simple, practical energy-saving tips Australian small businesses ca
 image: /insights/assets/images/post-images/power-saving.jpg
 ---
 
-**You** might think you're doing all right with your electricity use, but chances are, you're paying more than you need to. Many small businesses in Australia are stuck with outdated plans, wasting power during peak times, or overlooking simple ways to reduce their energy consumption.
+You might think you're doing all right with your electricity use, but chances are, you're paying more than you need to. Many small businesses in Australia are stuck with outdated plans, wasting power during peak times, or overlooking simple ways to reduce their energy consumption.
 
 ![Power saving tips - featured image](/insights/assets/images/post-images/power-saving.jpg)
 
