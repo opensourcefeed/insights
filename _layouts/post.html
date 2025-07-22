@@ -90,11 +90,12 @@ layout: default
 		</script>
 
 
+{% if page.show_disclaimer != false %}
 <div class="disclaimer">
 	<strong>Disclaimer</strong>
-		<p>The views and opinions expressed in this article are those of the author and do not necessarily reflect those of OpenSourceFeed.org or Tahrik Studio. We do not guarantee the accuracy or reliability of the information presented. Readers are encouraged to independently verify any information and use their discretion before acting on the content.</p>
+	<p>The views and opinions expressed in this article are those of the author and do not necessarily reflect those of OpenSourceFeed.org or Tahrik Studio. We do not guarantee the accuracy or reliability of the information presented. Readers are encouraged to independently verify any information and use their discretion before acting on the content.</p>
 </div>
-			
+{% endif %}
 		<div class="related">
 			<h3>Related Stories</h3>
 			{% if site.related_posts %}

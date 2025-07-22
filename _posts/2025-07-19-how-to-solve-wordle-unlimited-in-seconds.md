@@ -5,6 +5,7 @@ categories: [Games, Tips]
 tags: [Wordle, Wordle Unlimited, Word Games, Puzzle Strategies]
 description: "Master Wordle Unlimited by solving puzzles in seconds using smart strategies and proven tips."
 image: /insights/assets/images/post-images/wordle-solver.jpg
+show_disclaimer: false
 ---
 
 ![Solving Wordle Puzzles featured image](/insights/assets/images/post-images/wordle-solver.jpg)
