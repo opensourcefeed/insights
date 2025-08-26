@@ -117,4 +117,4 @@ Because in the end, it’s not just about machines and specs. It’s about what 
 **So tell me — what will you create on your server?**
 
 **Useful links:**  
-cheap VPS hosting, [*best dedicated server rental*](https://deltahost.com/)  
+cheap VPS hosting, [best dedicated server rental,](https://deltahost.com/)  
