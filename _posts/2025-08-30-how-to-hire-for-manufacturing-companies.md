@@ -3,7 +3,7 @@ layout: post
 title: "How to hire for manufacturing companies?"
 categories: [Manufacturing, Hiring]
 tags: [recruitment, workforce, ERPNext, operations]
-description: Practical playbook for hiring in manufacturing: clarity, grit, wider sourcing, employer brand, data-driven planning, and culture fit.
+description: "Practical playbook for hiring in manufacturing: clarity, grit, wider sourcing, employer brand, data-driven planning, and culture fit."
 image: /insights/assets/images/post-images/hiring-workforce.webp
 ---
 
