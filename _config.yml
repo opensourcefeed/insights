@@ -39,4 +39,4 @@ defaults:
     scope:
       path: ""
     values:
-      image: /assets/images/meta/logo-collage.jpg
+      image: /insights/assets/images/meta/defatul-featured.jpg
