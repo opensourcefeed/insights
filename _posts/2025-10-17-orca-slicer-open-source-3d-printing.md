@@ -8,13 +8,13 @@ description: Orca Slicer is a free and open-source 3D printing slicer that conve
 
 **Orca Slicer** is a free and open-source program that prepares digital 3D models for printing. It translates your design files into G-code — the instructions your printer follows to build each layer. The software was developed by **SoftFever** and is based on **Bambu Studio**, with several added improvements and extra tools for better print control.
 
-### What Orca Slicer Does
+## What Orca Slicer Does
 
 When you load a 3D model into Orca Slicer, it divides the model into thin layers. Each layer includes movement and temperature commands that your 3D printer understands. The result is a detailed G-code file that directs how the object should be printed.
 
 Orca Slicer combines features from **Bambu Studio** and **SuperSlicer**. It supports many popular printers and provides both simple and advanced controls, making it suitable for users at any experience level.
 
-### Key Features
+## Key Features
 
 - **Smart Slicing:** Creates smooth, accurate layers for high-quality prints.  
 - **AI Error Checking:** Detects potential print issues before they happen.  
@@ -24,7 +24,7 @@ Orca Slicer combines features from **Bambu Studio** and **SuperSlicer**. It supp
 - **Seam Control:** Reduces visible marks where layers meet.  
 - **Accurate Walls:** Produces strong and consistent outer walls.
 
-### New Features in the Latest Release
+## New Features in the Latest Release
 
 The latest version introduces new features that make printing more reliable and convenient:
 
@@ -34,18 +34,18 @@ The latest version introduces new features that make printing more reliable and 
 - **Model Library:** Browse ready-to-print designs within the slicer.  
 - **Automatic Alerts:** Get notifications and let the slicer pause if a problem occurs.
 
-### How to Download and Install
+## How to Download and Install
 
 You can [download Orca Slicer](https://orca-slicer.com/) for **Windows**, **macOS**, or **Linux** from the or the project’s [GitHub](https://github.com/SoftFever/OrcaSlicer/releases/tag/v2.3.1) release page.
 
-#### Installation Steps
+### Installation Steps
 
 1. **Windows:** Run the `.exe` file and follow the setup instructions.  
 2. **macOS:** Open the `.dmg` file and drag the Orca Slicer icon into your Applications folder.  
 3. **Linux:** Make the `.AppImage` file executable or start it from the terminal.  
 4. **Setup:** Launch the program and follow the on-screen guide to select your printer and region.
 
-### Getting Started with Printing
+## Getting Started with Printing
 
 1. **Select Your Printer:** Choose your printer from the preloaded profiles.  
 2. **Set Filament Type:** Pick your material (PLA, PETG, etc.). Orca Slicer suggests matching speeds and temperatures.  
@@ -55,7 +55,7 @@ You can [download Orca Slicer](https://orca-slicer.com/) for **Windows**, **macO
 6. **Send or Save:** Transfer the file directly to your printer over Wi-Fi or save it to an SD card.  
 7. **Monitor the Print:** If connected to Obico or a similar service, you can track your print remotely from your phone.
 
-### Why Choose Orca Slicer
+## Why Choose Orca Slicer
 
 Orca Slicer offers a balance of simplicity and precision. It’s approachable for beginners and powerful for experienced users. Because it’s open-source, its development is community-driven, ensuring frequent updates, bug fixes, and new printer profiles.  
 
