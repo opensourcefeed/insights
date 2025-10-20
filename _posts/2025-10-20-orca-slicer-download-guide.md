@@ -3,8 +3,9 @@ layout: post
 title: "Download and Set Up Orca Slicer for Windows, macOS, and Linux"
 categories: [3D Printing, Software]
 tags: [orca slicer, open source, 3d printing, slicer, software, installation, linux]
-meta_description: "Learn how to download and install Orca Slicer on Windows, macOS, and Linux, and get step-by-step guidance for your first 3D print."
+description: "Learn how to download and install Orca Slicer on Windows, macOS, and Linux, and get step-by-step guidance for your first 3D print."
 canonical_url: "https://www.opensourcefeed.org/insights/orca-slicer-open-source-3d-printing/"
+image: /insights/assets/images/post-images/orca-slicer-download/image1.jpg
 ---
 
 **[Orca Slicer](https://orcaslicer3d.com/)** is a free and open-source slicing tool created by **SoftFever**. It builds upon **Bambu Studio** and **PrusaSlicer**, offering a faster update cycle, flexible printer support, and reliable calibration features.
