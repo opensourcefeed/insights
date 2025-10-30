@@ -13,7 +13,7 @@ image: /insights/assets/images/post-images/pdf-annotation.webp
 
 But here’s the thing: just reading a PDF is like only eating the bun of a burger. Boring, right? Annotation is where the magic happens. You can highlight, scribble notes, doodle diagrams, or even roast your own writing in the margins. And you can do it solo or with friends. PDF annotation isn’t just a shiny thing to do – it actually helps students, researchers, and anyone trying to not drown in paperwork.
 
-I’ll break down why this matters, how it helps different folks, and share some tips on how to actually get started with [annotating pdfs](https://pdfized.com/blog/how-to-annotated-pdf).
+I’ll break down why this matters, how it helps different folks, and share some tips on how to actually get started with [annotating pdfs](https://pdfized.com/blog/how-to-annotate-pdf).
 
 ## What Even Is PDF Annotation?
 
