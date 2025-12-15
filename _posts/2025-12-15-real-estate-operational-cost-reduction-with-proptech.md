@@ -12,9 +12,12 @@ tags:
   - operational-costs
   - digital-transformation
 description: "How integrated PropTech workflows help real estate companies reduce operational costs, improve efficiency, and enhance tenant experience."
+image: /insights/assets/images/post-images/cost-optimization.webp
 ---
 
 Operational costs continue to rise for property developers, property managers, and real estate investment firms. From maintenance coordination to tenant communication and portfolio analysis, much of the daily workload involves repetitive tasks that consume time and money. This is why many organisations are adopting [end-to-end PropTech solutions for real estate companies](https://www.codebranch.co/industries/software-for-proptech) to automate processes, improve accuracy, and strengthen resource allocation. When these tools work together through a single integrated workflow, real estate teams can reduce inefficiencies and achieve stronger long-term performance.
+
+![Integrated PropTech workflows helping reduce operational costs in real estate](/insights/assets/images/post-images/cost-optimization.webp)
 
 ## How Integrated Workflows Reduce Manual Effort
 
