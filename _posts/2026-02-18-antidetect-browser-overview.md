@@ -11,7 +11,7 @@ image: /insights/assets/images/post-images/antidetect-browser.jpg
 
 In today’s digital world, online privacy and identity protection are increasingly important. Websites routinely track users through cookies, IP addresses, and browser fingerprints to personalize services, prevent fraud, or enforce platform policies.
 
-An antidetect browser is a specialized web browser designed to manage online identities by modifying or isolating identifying signals. One commonly referenced tool in this space is [OctoBrowser](https://octobrowser.net/), which provides profile isolation, proxy integration, and fingerprint-management features.
+An antidetect browser is a specialized web browser designed to manage online identities by modifying or isolating identifying signals. One commonly referenced tool in this space is [Octo Browser](https://octobrowser.net/), which provides profile isolation, proxy integration, and fingerprint-management features.
 
 ![What is Antidetect Browser](/insights/assets/images/post-images/antidetect-browser.jpg)
 
