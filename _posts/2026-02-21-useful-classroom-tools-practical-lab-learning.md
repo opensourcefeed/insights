@@ -11,11 +11,11 @@ tags:
   - lab learning
   - science education
   - teaching strategies
-image: /insights/assets/images/post-images/classroom-tools/image1.jpg
+image: /insights/assets/images/post-images/classroom-tools/image2.jpg
 ---
 
 
-![Practical Lab Learning Tools](/insights/assets/images/post-images/classroom-tools/image1.jpg)
+![Practical Lab Learning Tools](/insights/assets/images/post-images/classroom-tools/image2.jpg)
 
 Practical labs help students see how science works, not just read about it. With the right tools and routines, you can turn short class periods into focused investigations.
 
@@ -62,7 +62,7 @@ Have groups run two trials and compare. Ask which value they trust and why. This
 
 Introduce graphing after the pattern is visible. Let students predict the slope or shape before they see the line. Short predictions make the reveal meaningful.
 
-![Lab Data and Measurement](/insights/assets/images/post-images/classroom-tools/image2.jpg)
+![Lab Data and Measurement](/insights/assets/images/post-images/classroom-tools/image1.jpg)
 
 ## Scaffolds That Support Hands-On Learning
 
