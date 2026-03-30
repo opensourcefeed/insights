@@ -48,7 +48,7 @@ When selecting a video downloader, consider the following features:
 
 ### 1. VidMate No Ads
 
-[VidMate No Ads](https://vidmateapp.com/) stands out as one of the top choices for users looking for an ad-free video and music downloader on Android. It supports downloading media from a wide range of popular websites, including social media platforms and streaming services. The app offers multiple resolutions, fast download speeds, and batch downloading features. Its clean interface and lack of ads make it ideal for uninterrupted usage.
+[VidMate No Ads](https://www.vidmatelite.com/) stands out as one of the top choices for users looking for an ad-free video and music downloader on Android. It supports downloading media from a wide range of popular websites, including social media platforms and streaming services. The app offers multiple resolutions, fast download speeds, and batch downloading features. Its clean interface and lack of ads make it ideal for uninterrupted usage.
 
 **Pros:**
 - Completely ad-free experience
