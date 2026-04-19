@@ -1003,14 +1003,37 @@ a {
 .comments-shell {
   #disqus_thread {
     margin-top: 1.5rem;
+    min-width: 0;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
+#disqus_thread,
+.disqus_poll,
+#disqus_recommendations {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#disqus_thread iframe,
+#disqus_thread div,
+#disqus_thread section,
+.disqus_poll iframe,
+.disqus_poll div,
+#disqus_recommendations iframe,
+#disqus_recommendations div {
+  max-width: 100% !important;
+}
+
 .comments-load {
+  margin-top: 0.5rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.8rem 1.15rem;
+  padding: 0.5rem 1rem;
   border-radius: 999px;
   border: 1px solid rgba($post-accent, 0.18);
   background: linear-gradient(180deg, $post-accent, #0a4ab0);
@@ -1315,6 +1338,12 @@ ins.adsbygoogle[data-ad-status="unfilled"] {
   .blog-feed,
   .page-nav {
     border-radius: 22px;
+    border-width: 0;
+    background: white;
+    box-shadow: none;
+  }
+  body {
+    background: white;
   }
 }
 
@@ -1357,5 +1386,115 @@ ins.adsbygoogle[data-ad-status="unfilled"] {
   .content-module,
   .post-module {
     padding: 1.1rem;
+  }
+
+  .page-nav {
+    padding: 1rem 1.1rem;
+
+    .pagination {
+      gap: 0.4rem;
+      row-gap: 0.55rem;
+    }
+
+    .page-link {
+      padding: 0.5rem 0.8rem;
+      font-size: 0.92rem;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .post-layout {
+    --bs-gutter-x: 0;
+    margin-top: 1rem;
+  }
+
+  .content-module,
+  .post-module,
+  .post,
+  .utility-card {
+    border-radius: 18px;
+  }
+
+  .post,
+  .content-module,
+  .post-module {
+    padding: 0.95rem;
+  }
+
+  .post-shell,
+  .post,
+  .post-header,
+  .post-content,
+  .post-utility-stack,
+  .content-module,
+  .post-module,
+  .utility-card,
+  .related-grid,
+  .related-card,
+  .related-card-body {
+    min-width: 0;
+  }
+
+  .post-header .post-kicker {
+    gap: 0.45rem;
+  }
+
+  .post-header .category-pill,
+  .meta-cluster,
+  .comments-load {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .post-header h1 {
+    font-size: clamp(1.7rem, 8vw, 2.1rem);
+    line-height: 1.08;
+  }
+
+  .post-content {
+    font-size: 1rem;
+    line-height: 1.72;
+  }
+
+  .post-content ul,
+  .post-content ol {
+    padding-left: 1.05rem;
+  }
+
+  .comments-shell {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .page-nav {
+    padding: 0.9rem;
+
+    .module-heading {
+      margin-bottom: 0.9rem;
+    }
+
+    .page-link {
+      padding: 0.45rem 0.65rem;
+      font-size: 0.88rem;
+    }
+  }
+
+  #disqus_thread,
+  .disqus_poll,
+  #disqus_recommendations {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    overflow-x: auto !important;
+  }
+
+  #disqus_thread iframe,
+  .disqus_poll iframe,
+  #disqus_recommendations iframe,
+  #disqus_thread div,
+  .disqus_poll div,
+  #disqus_recommendations div {
+    min-width: 0 !important;
+    max-width: 100% !important;
   }
 }

@@ -134,7 +134,7 @@ layout: default
           <span class="eyebrow">Discussion</span>
           <h2>Comments</h2>
         </div>
-        <p class="comments-intro">Comments are loaded on demand to keep the page faster and lighter.</p>
+        <p class="comments-intro">Comments are loaded when you choose to open them, which keeps the page faster and lighter.</p>
         <button id="load-comments" class="comments-load" type="button" aria-controls="disqus_thread">Load comments</button>
         <div id="disqus_thread" hidden></div>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
@@ -171,19 +171,6 @@ layout: default
 
     if (loadButton) {
       loadButton.addEventListener('click', loadComments);
-    }
-
-    if ('IntersectionObserver' in window && commentsContainer) {
-      var observer = new IntersectionObserver(function(entries) {
-        entries.forEach(function(entry) {
-          if (entry.isIntersecting) {
-            loadComments();
-            observer.disconnect();
-          }
-        });
-      }, { rootMargin: '240px 0px' });
-
-      observer.observe(commentsContainer.parentElement);
     }
   })();
 </script>
