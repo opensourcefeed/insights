@@ -3,30 +3,71 @@ layout: blog
 title: Beyond Open Source - Technical Insights, Guest Posts & More
 description: "Explore expert-written technical articles, tutorials, and guest posts on Beyond Open Source - a knowledge hub by opensourcefeed.org beyond the scope of open source."
 ---
-<div class="blog">
-  <h1>Beyond Open Source</h1>
-  <div class="row stories">
-    {% for post in paginator.posts %}
-    <div class="col-md-4">
-        <a href="{{ post.url | prepend: site.baseurl }}">
-        <div class="card">
-          <img alt="{{post.title}}" src="//images.weserv.nl/?url={{ site.url | replace: 'https://','' | replace: 'https://','' }}{{ post.image }}&w=400&output=jpg" />
-          <h3 class="card-title">{{ post.title }}</h3>
-          <div class="card-body">
-            <div class="date-container">
-              <div class="date">{{ post.date | date_to_string}}</div>
-              <div class="mock"></div>
-            </div>
-            <div class="card-text">{{ post.content | strip_html | truncatewords: 30, '...'}}</div>
-          </div>
-        </div>
-      </a>
+<div class="blog blog-home">
+  <section class="blog-hero">
+    <span class="eyebrow">Editorial Hub</span>
+    <h1>Beyond Open Source</h1>
+    <p class="blog-intro">Technical essays, guest perspectives, and practical walkthroughs that go beyond announcements to explain how open technologies are built, secured, and used in the real world.</p>
+  </section>
+
+  <section class="content-module blog-feed">
+    <div class="module-heading">
+      <span class="eyebrow">Latest Stories</span>
+      <h2>Fresh insights and long-form reading</h2>
     </div>
-    {% endfor %}
-  </div>
-  <hr>
+
+    <div class="row stories g-4">
+      {% for post in paginator.posts %}
+      {% assign words = post.content | strip_html | number_of_words %}
+      {% assign read_time = words | divided_by: 180 %}
+      {% assign card_excerpt = post.excerpt | strip_html | replace: "&nbsp;", " " | strip %}
+      {% if card_excerpt == "" %}
+      {% assign content_blocks = post.content | split: "</p>" %}
+      {% for block in content_blocks limit:5 %}
+      {% assign candidate_excerpt = block | strip_html | replace: "&nbsp;", " " | strip %}
+      {% if candidate_excerpt != "" %}
+      {% assign card_excerpt = candidate_excerpt %}
+      {% break %}
+      {% endif %}
+      {% endfor %}
+      {% endif %}
+      {% if card_excerpt == "" %}
+      {% assign card_excerpt = post.content | strip_html | replace: "&nbsp;", " " | strip %}
+      {% endif %}
+      {% if read_time < 1 %}
+      {% assign read_time = 1 %}
+      {% endif %}
+      <div class="col-md-6 col-xl-4">
+        <article class="story-card">
+          <a class="story-link" href="{{ post.url | relative_url }}">
+            <div class="story-media">
+              {% if post.image %}
+              <img alt="{{ post.title }}" src="//images.weserv.nl/?url={{ site.url | replace: 'https://','' | replace: 'http://','' }}{{ post.image }}&w=720&output=jpg" loading="lazy" />
+              {% else %}
+              <div class="story-media-placeholder" aria-hidden="true"></div>
+              {% endif %}
+            </div>
+            <div class="story-card-body">
+              <div class="story-meta">
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+                <span>{{ read_time }} min read</span>
+              </div>
+              <h3 class="story-title">{{ post.title }}</h3>
+              <p class="story-excerpt">{{ card_excerpt | truncatewords: 28, '...' }}</p>
+            </div>
+          </a>
+        </article>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
   {% if paginator.total_pages > 1 %}
-  <div class="page-nav">
+  <nav class="page-nav content-module" aria-label="Pagination">
+    <div class="module-heading">
+      <span class="eyebrow">Browse</span>
+      <h2>More pages</h2>
+    </div>
     <ul class="pagination justify-content-center pagination-sm flex-wrap">
       {% if paginator.previous_page %}
       <li class="page-item"><a class="page-link"
@@ -58,15 +99,6 @@ description: "Explore expert-written technical articles, tutorials, and guest po
       <li class="page-item disabled"><a class="page-link">Next</a></li>
       {% endif %}
     </ul>
-  </div>
+  </nav>
   {% endif %}
-
 </div>
-
-<style>
-  main {
-    background-color: #f7f7f7;
-    box-shadow: none;
-    border: none;
-  }
-</style>

@@ -1,118 +1,189 @@
---- 
+---
 layout: default
 ---
-<div class="row">
-	<div class="col-lg-8 order-lg-1 content">
-		<div class="post">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
-			<div class="post-header">
+<div class="row post-layout">
+  <div class="col-lg-1 order-lg-0"></div>
+  <div class="col-lg-10 order-lg-1 content">
+    <div class="post-shell">
+      <div class="post">
+        <header class="post-header">
+          <div class="post-kicker">
+            {% for category in page.categories %}
+            {% assign category_page = null %}
+            {% for site_page in site.pages %}
+            {% if site_page.uid == category %}
+            {% assign category_page = site_page %}
+            {% endif %}
+            {% endfor %}
+            {% if category_page %}
+            <a href="{{ category_page.url }}" class="category-pill">{{ category_page.title }}</a>
+            {% else %}
+            <span class="category-pill">{{ category }}</span>
+            {% endif %}
+            {% endfor %}
+          </div>
 
-				<h1 class="post-title">{{ page.title }}</h1>
-				<hr>
-				<div class="row post-meta">
-					<div class="col-sm-4">
-						<div class="date">{{ page.date | date: "%B %-d, %Y" }}</div>
-					</div>
-					<div class="col-sm-8 text-end">
-						{% for category in page.categories %}
-						{% assign topage = null %}
-						{% for page in site.pages %}
-						{% if page.uid == category %}
-						{% assign topage = page %}
-						{% endif %}
-						{% endfor %}
-						{% if topage %}
-						<a href="{{topage.url}}">
-							<span class="category">{{topage.title}}</span>
-						</a>
-						{% else %}
-						<span class="category">{{category}}</span>
-						{% endif %}
-						{% endfor %}
-					</div>
-				</div>
+          <h1 class="post-title">{{ page.title }}</h1>
 
+          <div class="post-meta" aria-label="Article details">
+            <div class="meta-cluster">
+              <span class="meta-label">Published</span>
+              <time class="date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+            </div>
+            {% assign words = content | strip_html | number_of_words %}
+            {% assign read_time = words | divided_by: 180 %}
+            {% if read_time < 1 %}
+            {% assign read_time = 1 %}
+            {% endif %}
+            <div class="meta-cluster">
+              <span class="meta-label">Read time</span>
+              <span>{{ read_time }} min</span>
+            </div>
+          </div>
+        </header>
 
-				<hr>
-				<div class="ad">	
-					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-					<!-- header - ad -->
-					<ins class="adsbygoogle"
-					     style="display:block"
-					     data-ad-client="ca-pub-6380671811722843"
-					     data-ad-slot="8215370559"
-					     data-ad-format="horizontal"
-					     data-full-width-responsive="false"></ins>
-					<script>
-					     (adsbygoogle = window.adsbygoogle || []).push({});
-					</script>
-				</div>
-			</div>
+        <article class="post-content">
+          {{ content }}
 
-			<article class="post-content">
-				{{ content }}
-				{% if page.attribution %}
-				<div class="attribution">
-					Powered by {{page.attribution}}
-				</div>
-				{% endif %}
-			</article>
-		</div>
-		<hr>
-		<!--Content recommendation ad-->
-			<ins class="adsbygoogle"
-			style="display:block"
-			data-ad-format="autorelaxed"
-			data-ad-client="ca-pub-6380671811722843"
-			data-ad-slot="4323854165"></ins>
-		 <!-- End of content recommendation ad -->
-		<hr>
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		<!-- Feed sidebar -->
-		<div class="ad">
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6380671811722843" data-ad-slot="8487642304" data-ad-format="auto">
-			</ins>
-		</div>
-		<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
+          <div class="post-utility-stack">
+            {% if page.attribution %}
+            <div class="attribution utility-card">
+              <span class="utility-label">Attribution</span>
+              <p>Powered by {{ page.attribution }}</p>
+            </div>
+            {% endif %}
 
+            {% if page.video %}
+            <section class="utility-card post-video">
+              <h2>{% if page.videoTitle %}{{ page.videoTitle }}{% else %}Video Preview{% endif %}</h2>
+              <div class="video-responsive">
+                <iframe width="100%" src="{{ page.video }}" title="Preview Video" frameborder="0" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <p>For more videos, subscribe to <strong>DistroScreens</strong> on YouTube.</p>
+              <script src="https://apis.google.com/js/platform.js"></script>
+              <div class="g-ytsubscribe" data-channelid="UCeYNsHx2DsAdDeXKI-zx6gQ" data-layout="full" data-count="hidden"></div>
+            </section>
+            {% endif %}
+          </div>
+        </article>
+      </div>
 
-{% if page.show_disclaimer != false %}
-<div class="disclaimer">
-	<strong>Disclaimer</strong>
-	<p>The views and opinions expressed in this article are those of the author and do not necessarily reflect those of OpenSourceFeed.org or Tahrik Studio. We do not guarantee the accuracy or reliability of the information presented. Readers are encouraged to independently verify any information and use their discretion before acting on the content.</p>
+      <section class="post-module post-module-ad" aria-label="Sponsored">
+        <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-6380671811722843"
+          data-ad-slot="8215370559"
+          data-ad-format="horizontal"
+          data-full-width-responsive="false"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </section>
+
+      <section class="post-module post-module-ad" aria-label="Recommended content">
+        <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-format="autorelaxed"
+          data-ad-client="ca-pub-6380671811722843"
+          data-ad-slot="4323854165"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </section>
+
+      <section class="post-module post-module-ad" aria-label="Feed promotion">
+        <div class="ad">
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6380671811722843" data-ad-slot="8487642304" data-ad-format="auto"></ins>
+        </div>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </section>
+
+      {% if page.show_disclaimer != false %}
+      <div class="disclaimer utility-card">
+        <span class="utility-label">Disclaimer</span>
+        <p>The views and opinions expressed in this article are those of the author and do not necessarily reflect those of OpenSourceFeed.org or Tahrik Studio. We do not guarantee the accuracy or reliability of the information presented. Readers are encouraged to independently verify any information and use their discretion before acting on the content.</p>
+      </div>
+      {% endif %}
+
+      <section class="related content-module">
+        <div class="module-heading">
+          <span class="eyebrow">Keep Reading</span>
+          <h2>Related Stories</h2>
+        </div>
+        {% if site.related_posts %}
+        <div class="related-grid">
+          {% for post in site.related_posts limit:6 %}
+          <article class="related-card">
+            <div class="related-card-body">
+              <p class="related-date">{{ post.date | date: "%b %-d, %Y" }}</p>
+              <h3><a href="/insights{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
+              <p class="related-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</p>
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </section>
+
+      <section class="comments-shell content-module">
+        <div class="module-heading">
+          <span class="eyebrow">Discussion</span>
+          <h2>Comments</h2>
+        </div>
+        <p class="comments-intro">Comments are loaded on demand to keep the page faster and lighter.</p>
+        <button id="load-comments" class="comments-load" type="button" aria-controls="disqus_thread">Load comments</button>
+        <div id="disqus_thread" hidden></div>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      </section>
+    </div>
+  </div>
+  <div class="col-lg-1 order-lg-2"></div>
 </div>
-{% endif %}
-		<div class="related">
-			<h3>Related Stories</h3>
-			{% if site.related_posts %}
-			<ul>
-				{% for post in site.related_posts limit:6 %}
-				<li>
-					<a href="/insights{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-				</li> 
-				{% endfor %}
-			</ul>
-			{% endif %}
 
-		</div>
-		<div id="disqus_thread"></div>
-		<script>
-			(function() {
-				var d = document, s = d.createElement('script');
-				s.src = 'https://theopensourcefeed.disqus.com/embed.js';
-				s.setAttribute('data-timestamp', +new Date());
-				(d.head || d.body).appendChild(s);
-			})();
-		</script>
-		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<script>
+  (function() {
+    var loadButton = document.getElementById('load-comments');
+    var commentsContainer = document.getElementById('disqus_thread');
+    var hasLoadedComments = false;
 
-</div>
-<div class="col-lg-2 order-lg-0">
+    function loadComments() {
+      if (hasLoadedComments || !commentsContainer) {
+        return;
+      }
 
-</div>
-<div class="col-lg-2 order-lg-2">
+      hasLoadedComments = true;
+      commentsContainer.hidden = false;
 
-</div>
-</div>
+      var d = document;
+      var s = d.createElement('script');
+      s.src = 'https://theopensourcefeed.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+
+      if (loadButton) {
+        loadButton.hidden = true;
+      }
+    }
+
+    if (loadButton) {
+      loadButton.addEventListener('click', loadComments);
+    }
+
+    if ('IntersectionObserver' in window && commentsContainer) {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            loadComments();
+            observer.disconnect();
+          }
+        });
+      }, { rootMargin: '240px 0px' });
+
+      observer.observe(commentsContainer.parentElement);
+    }
+  })();
+</script>
