@@ -33,7 +33,7 @@ Tools like **Umami**, **GoatCounter**, and **Matomo** let you own your data comp
 
 ### Zero-Setup Services
 
-For projects that just need a headcount, even a basic hit counter can do the job. Services like [e-zeeinternet.com](https://e-zeeinternet.com/) have been around since the early 2000s and take a deliberately minimal approach — a small script, no cookies, and a free tier. No setup complexity, no data ownership concerns. You can find similar lightweight tools reviewed alongside other [open-source software alternatives](/top-10-open-source-alternatives-2025/) that the community has been adopting.
+For projects that just need a headcount, even a basic hit counter can do the job. Services like[e-zeeinternet.com have been around since the early 2000s and take a deliberately minimal approach — a small script, no cookies, and a free tier. No setup complexity, no data ownership concerns. You can [Go to the new e-zeeinternet.com](https://e-zeeinternet.com/) to learn more about this service. You may also find similar lightweight tools reviewed alongside other [open-source software alternatives](/top-10-open-source-alternatives-2025/) that the community has been adopting.
 
 ## Frequently Asked Questions
 
