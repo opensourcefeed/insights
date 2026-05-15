@@ -4,12 +4,12 @@ title: "Open-source tools and productivity in the Apple ecosystem"
 categories: [open-source, tools, productivity, apple]
 tags: [open-source, productivity, apple, iphone, macos, device-optimization, app-management, digital-workflow]
 description: "How to balance open-source flexibility with everyday Apple device productivity — covering app ecosystems, device optimization, and sustainable digital habits."
-image: /insights/assets/images/post-images/open-source-apple-productivity.png
+image: /insights/assets/images/post-images/open-source-apple-productivity.webp
 ---
 
 Open-source software has transformed the way people interact with technology. From developers building scalable applications to everyday users looking for flexible alternatives to paid tools, open-source solutions have become a major part of modern digital workflows — including how Apple device users manage storage, performance, and daily productivity.
 
-![Open-source tools and productivity on Apple devices — a developer working across a Mac and iPhone with productivity apps open](/insights/assets/images/post-images/open-source-apple-productivity.png)
+![Open-source tools and productivity on Apple devices — a developer working across a Mac and iPhone with productivity apps open](/insights/assets/images/post-images/open-source-apple-productivity.webp)
 
 Apple users in particular rely on a growing ecosystem of apps and utilities to handle productivity, media consumption, and device performance. As digital workflows become more complex, users are increasingly looking for practical ways to combine open-source flexibility with reliable everyday tools — while keeping their devices running smoothly.
 
