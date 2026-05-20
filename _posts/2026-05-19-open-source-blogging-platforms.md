@@ -23,7 +23,7 @@ The Gutenberg editor uses a block-based architecture with support for reusable p
 
 From an infrastructure perspective, WordPress remains highly flexible. In addition to the traditional MySQL stack, it also supports SQLite, reducing hosting requirements and simplifying deployment for smaller projects. This makes it possible to launch a website without complex server configuration.
 
-WordPress is suitable for personal blogs, editorial content platforms, websites with community features, and subscription-based projects. To create a more distinctive visual identity and avoid template-based designs, companies often choose [custom WordPress theme development](https://www.yelk.io/services/wordpress/).
+WordPress is suitable for personal blogs, editorial content platforms, websites with community features, and subscription-based projects. To create a more distinctive visual identity and avoid template-based designs, companies often choose custom WordPress theme development [https://www.yelk.io/services/wordpress/](https://www.yelk.io/services/wordpress/).
 
 ## Ghost: A Platform with Built-In Monetization
 
