@@ -9,6 +9,7 @@ $post-border-strong: #bcc7d4;
 $post-text: #1a1d20;
 $post-text-soft: #5b6573;
 $post-accent: #1e293b;
+$post-link: #1e63b6;
 $post-accent-soft: #e8eef5;
 $breakpoint-md: 768px;
 
@@ -835,15 +836,15 @@ a {
   }
 
   a:not(.category-pill):not(.comments-load) {
-    color: $post-accent;
+    color: $post-link;
     text-decoration: underline;
-    text-decoration-color: rgba($post-accent, 0.2);
+    text-decoration-color: rgba($post-link, 0.2);
     text-underline-offset: 0.18em;
     transition: color 0.2s ease, text-decoration-color 0.2s ease;
 
     &:hover {
-      color: darken($post-accent, 8%);
-      text-decoration-color: rgba($post-accent, 0.55);
+      color: darken($post-link, 8%);
+      text-decoration-color: rgba($post-link, 0.55);
     }
   }
 
