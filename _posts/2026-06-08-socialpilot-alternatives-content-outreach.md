@@ -4,7 +4,7 @@ title: "SocialPilot alternatives for content and outreach"
 categories: [tools, open-source]
 tags: [social-media, linkedin, automation, content-marketing, b2b, outreach, scheduling, marketing-tools]
 description: "Explore top SocialPilot alternatives for social media scheduling and LinkedIn outreach tools to streamline B2B content and lead generation workflows."
-image: /insights/assets/images/post-images/sSocialpilot-alternatives-1008x497.webp
+image: /insights/assets/images/post-images/Socialpilot-alternatives-1008x497.webp
 ---
 
 Modern B2B marketing increasingly combines social media management, LinkedIn prospecting, and automation workflows into unified growth systems. Businesses today need tools that help schedule content, manage outreach campaigns, organize communication, and scale brand visibility efficiently across multiple platforms. As teams grow and workflows become more advanced, many companies begin searching for [SocialPilot alternatives](https://expandi.io/blog/socialpilot-alternatives/) and LinkedIn outreach solutions that better support collaboration, automation, and scalable operations.
