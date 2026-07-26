@@ -4,7 +4,7 @@ title: "Why teams are moving to structured AI systems"
 categories: [tools, tutorial, open-source]
 tags: [ai-agents, llm, prompt-engineering, langchain, llamaindex, agentic-systems, multi-agent, open-source-ai]
 description: "Learn why single prompts fail in production and how engineering teams are adopting structured, modular AI systems for scalable enterprise applications."
-image: /insights/assets/images/post-images/structured-ai-systems.png
+image: /insights/assets/images/post-images/structured-ai/structured-ai-systems.png
 ---
 
 In the early days of the generative AI craze, there seemed to be an assumption that anyone capable of writing a smart paragraph could turn it into a fully functional application. For months we have been fine-tuning our adjectives, instructing the systems differently, and begging the models to "take a deep breath" before performing any difficult math calculations. It was magic! However, once companies started trying to scale these playgrounds to real enterprise-level applications, they ran up against limitations pretty fast. And the truth was very clear: one prompt is just too fragile, unstable, and limited for business logic.
