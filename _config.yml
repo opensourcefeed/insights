@@ -39,4 +39,4 @@ defaults:
     scope:
       path: ""
     values:
-      image: /insights/assets/images/meta/defatul-featured.jpg
+      image: /insights/assets/images/meta/defatul-featured.webp
