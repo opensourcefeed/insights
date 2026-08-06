@@ -114,9 +114,32 @@ layout: default
           <span class="eyebrow">Keep Reading</span>
           <h2>Related Stories</h2>
         </div>
-        {% if site.related_posts %}
+        {% assign related_posts = "" | split: "" %}
+        {% for post in site.posts %}
+          {% if post.url == page.url %}
+            {% continue %}
+          {% endif %}
+          {% assign shared_categories = post.categories | intersection: page.categories %}
+          {% if shared_categories.size > 0 %}
+            {% assign related_posts = related_posts | push: post %}
+          {% endif %}
+        {% endfor %}
+
+        {% if related_posts.size < 6 %}
+          {% for post in site.posts %}
+            {% if post.url == page.url or related_posts contains post %}
+              {% continue %}
+            {% endif %}
+            {% assign related_posts = related_posts | push: post %}
+            {% if related_posts.size >= 6 %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% if related_posts.size > 0 %}
         <div class="related-grid">
-          {% for post in site.related_posts limit:6 %}
+          {% for post in related_posts limit:6 %}
           <article class="related-card">
             <div class="related-card-body">
               <p class="related-date">{{ post.date | date: "%b %-d, %Y" }}</p>
