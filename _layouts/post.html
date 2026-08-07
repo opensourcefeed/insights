@@ -115,22 +115,39 @@ layout: default
           <h2>Related Stories</h2>
         </div>
         {% assign related_posts = "" | split: "" %}
-        {% for post in site.posts %}
-          {% if post.url == page.url %}
-            {% continue %}
+        {% assign used_urls = "" | split: "" %}
+        {% assign max_shared = page.categories.size %}
+        {% for shared_count in (1..max_shared) reversed %}
+          {% if related_posts.size >= 6 %}
+            {% break %}
           {% endif %}
-          {% assign shared_categories = post.categories | intersection: page.categories %}
-          {% if shared_categories.size > 0 %}
-            {% assign related_posts = related_posts | push: post %}
-          {% endif %}
+          {% for post in site.posts %}
+            {% if post.url == page.url or used_urls contains post.url %}
+              {% continue %}
+            {% endif %}
+            {% assign shared = 0 %}
+            {% for category in post.categories %}
+              {% if page.categories contains category %}
+                {% assign shared = shared | plus: 1 %}
+              {% endif %}
+            {% endfor %}
+            {% if shared == shared_count %}
+              {% assign related_posts = related_posts | push: post %}
+              {% assign used_urls = used_urls | push: post.url %}
+              {% if related_posts.size >= 6 %}
+                {% break %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
         {% endfor %}
 
         {% if related_posts.size < 6 %}
           {% for post in site.posts %}
-            {% if post.url == page.url or related_posts contains post %}
+            {% if post.url == page.url or used_urls contains post.url %}
               {% continue %}
             {% endif %}
             {% assign related_posts = related_posts | push: post %}
+            {% assign used_urls = used_urls | push: post.url %}
             {% if related_posts.size >= 6 %}
               {% break %}
             {% endif %}

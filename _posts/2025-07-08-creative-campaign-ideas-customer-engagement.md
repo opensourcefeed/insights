@@ -2,7 +2,7 @@
 layout: post
 title: "Creative Campaign Ideas to Keep Your Customers Engaged Every Day"
 description: Creative ways to maintain daily customer engagement through gamification, content calendars, live streams, and more.
-categories: marketing customer-engagement
+categories: [Marketing, Customer Engagement]
 tags: [customer retention, brand loyalty, daily marketing, campaign ideas]
 image: /insights/assets/images/post-images/creative-campaign/1.jpg
 ---

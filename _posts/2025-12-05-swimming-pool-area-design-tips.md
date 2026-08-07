@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Transforming Your Swimming Pool Area: 9 Design Tips to Follow"
-categories: home-improvement
+categories: [Home Improvement]
 tags: [swimming pool, design, landscaping, outdoor]
 description: "Explore 9 practical design tips to upgrade and transform your swimming pool area with style, comfort, and functionality."
 image: /insights/assets/images/post-images/pool-design/image1.jpg
