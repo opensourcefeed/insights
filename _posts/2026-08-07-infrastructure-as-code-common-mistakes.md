@@ -33,7 +33,7 @@ Give only the minimum access needed for each task.
 
 ## 4. Ignoring Documentation
 
-This kind of mistake happens frequently because [documentation](https://www.techtarget.com/searchsoftwarequality/definition/documentation) of every change takes a lot of time. However, this step is very important, as clear documentation allows everyone to understand the infrastructure and all the commands that are run better. This part is extremely important and meaningful for new team members, as it will help them understand the organization of the systems and the role of many different files more easily. This is a kind of step that makes a huge difference between a smooth onboarding experience and hours of wasted troubleshooting.
+This kind of mistake happens frequently because documentation of every change takes a lot of time. However, this step is very important, as clear documentation allows everyone to understand the infrastructure and all the commands that are run better. This part is extremely important and meaningful for new team members, as it will help them understand the organization of the systems and the role of many different files more easily. This is a kind of step that makes a huge difference between a smooth onboarding experience and hours of wasted troubleshooting.
 
 ## How to build better habits
 
