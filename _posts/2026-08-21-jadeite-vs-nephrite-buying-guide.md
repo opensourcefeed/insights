@@ -4,7 +4,7 @@ title: "Jadeite vs nephrite: which should you actually buy?"
 categories: [lifestyle, tools, tutorial]
 tags: [jade, jadeite, nephrite, gemstones, buying-guide, jewellery, hetian-jade, gem-treatment]
 description: "Jadeite and nephrite are both jade — but they behave very differently. A practical dimension-by-dimension guide to choosing the right stone for your needs."
-image: /insights/assets/images/post-images/jadeite-vs-nephrite.png
+image: /insights/assets/images/post-images/jadeite-vs-nephrite.webp
 ---
 
 *Two unrelated minerals share one English word, and most comparisons stop at the chemistry. The useful question is which one suits what you're actually buying it for.*
@@ -13,7 +13,7 @@ Jadeite and nephrite are both jade, in the sense that gemmology recognises exact
 
 Most articles comparing them stop after that paragraph, which leaves the practical question unanswered. Here is the decision, dimension by dimension.
 
-![Two polished jade stones — one vivid green jadeite cabochon and one creamy white nephrite disc — side by side on a neutral surface](/insights/assets/images/post-images/jadeite-vs-nephrite.png)
+![Two polished jade stones — one vivid green jadeite cabochon and one creamy white nephrite disc — side by side on a neutral surface](/insights/assets/images/post-images/jadeite-vs-nephrite.webp)
 
 ## The one-line answer
 
