@@ -35,7 +35,7 @@ Also known as a "lead capture page" or "squeeze page", it features a form design
 
 ### 2. Click-Through Landing Page
 
-Used by e-commerce and SaaS businesses, click-through pages educate visitors before directing them to a checkout page or purchase. The page lays out deep product benefits, addresses common customer objections, and features a simple button as the call to action that routes the user directly to the final transaction screen or app store.
+Used by [e-commerce](https://mycompanysite.com/services/website-design/ecommerce/) and SaaS businesses, click-through pages educate visitors before directing them to a checkout page or purchase. The page lays out deep product benefits, addresses common customer objections, and features a simple button as the call to action that routes the user directly to the final transaction screen or app store.
 
 ### 3. Sales Landing Page
 
@@ -142,7 +142,7 @@ Templates can be a useful starting point, but they often lack the flexibility ne
 
 ### Turn More Website Visitors into Customers
 
-A successful landing page does more than attract visitors — it encourages them to take action. Investing in a professionally designed landing page with clear messaging, strong calls to action, and an optimized user experience can help businesses maximize their marketing efforts and improve conversion rates.
+A successful landing page does more than attract visitors — it encourages them to take action. Investing in a [professionally designed landing page](https://mycompanysite.com/services/website-design/landing-page/) with clear messaging, strong calls to action, and an optimized user experience can help businesses maximize their marketing efforts and improve conversion rates.
 
 ## Frequently Asked Questions
 
