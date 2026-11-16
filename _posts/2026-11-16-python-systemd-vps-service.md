@@ -8,10 +8,6 @@ description: "Run a Python service on a VPS with systemd and venv: set paths, us
 
 **A** Python process started in an SSH terminal can demonstrate that code works. It cannot, by itself, demonstrate that the service will start after a reboot, use the intended environment, write useful logs, or recover from an ordinary crash. On a VPS, those operational details become part of the application. systemd gives Linux a standard way to define a long-running service, while a Python virtual environment gives the application a specific interpreter and dependency set. Treating both as explicit configuration makes a service easier to run and easier to diagnose.
 
-![Terminal window showing a systemd status output for a Python service running on a Linux VPS](/insights/assets/images/post-images/python-systemd-vps-service.png)
-
-<!-- Image prompt: A dark terminal screen showing systemctl status output for a Python service, green "active (running)" line, Linux server rack softly blurred in the background, flat modern style. -->
-
 Consider three common, conditional situations. A small webhook process needs to return after a host restart. A background worker needs a different environment from a developer's laptop. A web API crashes on one malformed input and should restart, but not spin forever. These are not reasons to make a unit file elaborate. They are reasons to state the working directory, executable, environment, user, restart policy, and log path rather than leaving them implicit in a shell history.
 
 Deployment is complete when the service can be started, stopped, observed, and restarted by a documented system interface.
