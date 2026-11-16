@@ -405,29 +405,20 @@ footer.site-footer {
     }
   }
 
-  .social-icons img {
-    filter: grayscale(1);
-    opacity: 0.6;
-    transition: filter 0.2s ease, opacity 0.2s ease;
-  }
-
-  .social-icons a {
+  .social-icons .social-link {
     border-radius: 999px;
     width: 2.5rem;
     height: 2.5rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    color: $post-text-soft;
+    transition: color 0.2s ease, background-color 0.2s ease;
 
     &:hover,
     &:focus-visible {
+      color: $post-accent;
       background: rgba($post-ink, 0.05);
-
-      img {
-        filter: none;
-        opacity: 1;
-      }
     }
   }
 }
@@ -452,16 +443,27 @@ footer.site-footer {
     font-size: 1rem;
   }
 
-  .social-icons {
-    img {
-      height: 20px;
-    }
-  }
 }
 
 .navbar-brand img {
-  width: 24px;
+  width: 31px;
+  height: 28px;
   margin-right: 0.5rem;
+}
+
+/* Wordmark: "Feed" in the brand gradient (darker stops for contrast on light) */
+.wordmark-accent {
+  color: #0891b2;
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .wordmark-accent {
+    background: linear-gradient(90deg, #0891b2, #6366f1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
 }
 
 .navbar-brand {
@@ -500,10 +502,8 @@ footer.site-footer {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-
-  img {
-    height: 20px;
-  }
+  list-style: none;
+  padding-left: 0;
 
   li {
     display: inline-flex;
@@ -1401,23 +1401,29 @@ ins.adsbygoogle[data-ad-status="unfilled"] {
   }
 }
 
+/* Collapsed navbar (below xl): full-width bar, tall menus scroll inside the viewport */
+@media (max-width: 1199.98px) {
+  .site-navbar {
+    .navbar-collapse {
+      margin-top: 0.6rem;
+      padding-top: 0.6rem;
+      border-top: 1px solid $post-line;
+      max-height: calc(100vh - 5rem);
+      overflow-y: auto;
+    }
+
+    .social-icons {
+      margin-left: 0;
+      margin-top: 0.35rem;
+    }
+  }
+}
+
 @media (max-width: 767.98px) {
   .site-navbar {
     border-radius: 0;
     margin: 0;
     padding: 0.5rem;
-
-    .navbar-collapse {
-      margin-top: 0.6rem;
-      padding-top: 0.6rem;
-      border-top: 1px solid $post-line;
-    }
-
-    .social-icons {
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: 0.35rem;
-    }
   }
 
   .post {

@@ -1,16 +1,19 @@
-<nav class="navbar navbar-expand-xxl site-navbar">
+<nav class="navbar navbar-expand-xl site-navbar">
   <div class="container-fluid">
-    <a class="navbar-brand" href="{{site.url}}">
-      <img width="24" src="/insights/assets/images/meta/icon.png" alt="OpenSourceFeed logo" />
-      <span>OpenSourceFeed</span>
-    </a>
+    <a class="navbar-brand" href="{{site.url}}"><img src="/insights/assets/images/meta/mark.svg" width="31" height="28" alt="" /><span class="wordmark">OpenSource<span class="wordmark-accent">Feed</span></span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="/distribution/">Operating System</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="osDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Operating System
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="osDropdown">
+            <li><a class="dropdown-item" href="/distribution/">All Operating Systems</a></li>
+            <li><a class="dropdown-item" href="/distro-chooser/">Distro Finder</a></li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/desktop/">Desktop Environment</a>
@@ -30,38 +33,32 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/page-hit-rank/">Page Hit Rank</a>
+          <a class="nav-link" href="/page-hit-rank/">Popularity Index</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="softwareDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Software
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="softwareDropdown">
+            <li><a class="dropdown-item" href="/software/">Software Directory</a></li>
+            <li><a class="dropdown-item" href="/software/alternative-to/">Open Source Alternatives</a></li>
+            <li><a class="dropdown-item" href="/software/best-open-source-software/">Popular Open Source Software</a></li>
+          </ul>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             About
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/guest-post-guidelines/">Guest Post Guidelines</a></li>
             <li><a class="dropdown-item" href="/privacy-policy/">Privacy Policy</a></li>
           </ul>
         </li>
       </ul>
       <ul class="navbar-nav social-icons">
-        <li> <a rel="nofollow noopener noreferrer" title="Follow us on Mastodon" target="_blank" href="https://floss.social/@opensourcefeed">
-            <img height="25" alt="Mastodon Link" src="/insights/assets/images/meta/mastodon.png"> </a> </li>
-        <li> <a rel="nofollow" title="Send us Email" href="mailto:contact.opensourcefeed@gmail.com"> <img
-              height="25" alt="Email ID" src="/insights/assets/images/meta/email.png"> </a> </li>
-        <li> <a rel="nofollow noopener noreferrer" title="Like us on facebook" target="_blank"
-            href="https://www.facebook.com/opensourcefeed/">
-            <img height="25" alt="FB Link" src="/insights/assets/images/meta/facebook.png"> </a> </li>
-        <li> <a rel="nofollow noopener noreferrer" title="Follow us on Twitter" target="_blank" href="https://x.com/opensourcefeed">
-            <img height="25" alt="Twitter Link" src="/insights/assets/images/meta/twitter.png"> </a> </li>
-        <li> <a rel="nofollow noopener noreferrer" title="Subscribe our YouTube channel" target="_blank"
-            href="https://www.youtube.com/c/DistroScreens"> <img height="25" alt="YouTube Channel"
-              src="/insights/assets/images/meta/youtube.png">
-          </a> </li>
-        <li> <a rel="noopener noreferrer" title="Subscribe for our RSS" target="_blank" href="/feed.xml"> <img height="25" alt="RSS Link"
-              src="/insights/assets/images/meta/rss.png"> </a> </li>
-        <li> <a rel="nofollow noopener noreferrer" title="Subscribe us on Telegram" target="_blank" href="https://t.me/opensourcefeedOrg">
-            <img height="25" alt="Telegram Link" src="/insights/assets/images/meta/telegram.png"> </a> </li>
-        <li> <a rel="nofollow noopener noreferrer" title="Follw us on Instagram" target="_blank"
-            href="https://www.instagram.com/opensourcefeed/">
-            <img height="25" alt="Instagram Link" src="/insights/assets/images/meta/instagram.png"> </a> </li>
+        {% for item in site.data.social %}{% if item.navbar %}
+        <li>{% include social-link.html item=item %}</li>
+        {% endif %}{% endfor %}
       </ul>
     </div>
   </div>
