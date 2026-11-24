@@ -4,14 +4,9 @@ title: "Proxmox on a rented server: the host is not infinite"
 categories: [linux, tools, virtualization]
 tags: [proxmox, proxmox-ve, virtualization, kvm, backups, rented-server, capacity-planning, hypervisor]
 description: "Proxmox on a rented server needs host headroom, tested restores and clear storage planning. Learn why the hypervisor host is not an infinite VM."
-image: /insights/assets/images/post-images/proxmox-rented-server-host-resources.png
 ---
 
 ‘Install Proxmox and make a few VMs’ sounds like a weekend task. Operating those VMs safely on a rented server is a different job: the host must retain enough CPU, memory, storage performance, and recovery capacity to keep its own control plane useful while guests are busy. A hypervisor cannot create resources that were never reserved.
-
-![A Proxmox host server with virtual machines competing for CPU, memory and storage](/insights/assets/images/post-images/proxmox-rented-server-host-resources.png)
-
-<!-- Image generation prompt: A clean isometric illustration of one rented server rack unit with several small virtual machine cubes on top, a small reserved block labelled host kept aside, open-source blue and green palette. -->
 
 A hypervisor host is the physical system that schedules virtual machines or containers and exposes their virtual disks, networks, and consoles. Its own operating and management functions remain dependencies of every guest it runs.
 
