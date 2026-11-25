@@ -9,7 +9,7 @@ image: /insights/assets/images/post-images/crisis-management-security-disclosure
 
 ![Illustration of a broken padlock and warning icons beside a shield, with the text Crisis management for open-source vulnerabilities](/insights/assets/images/post-images/crisis-management-security-disclosure.webp)
 
-A crisis management service handles the communication side of a security disclosure that has slipped out of control, so maintainers can stay focused on the fix. When a vulnerability leaks early, an embargo breaks, or maintainers argue in public, the service drafts the first statement, keeps every channel saying the same thing, and watches where the story spreads. Most projects have a process for fixing vulnerability reports; far fewer have a plan for the morning the details reach Hacker News before the patch ships.
+**A** crisis management service handles the communication side of a security disclosure that has slipped out of control, so maintainers can stay focused on the fix. When a vulnerability leaks early, an embargo breaks, or maintainers argue in public, the service drafts the first statement, keeps every channel saying the same thing, and watches where the story spreads. Most projects have a process for fixing vulnerability reports; far fewer have a plan for the morning the details reach Hacker News before the patch ships.
 
 ## What Does a Security Disclosure Gone Wrong Look Like?
 
