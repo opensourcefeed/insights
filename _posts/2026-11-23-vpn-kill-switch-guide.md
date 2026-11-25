@@ -4,12 +4,9 @@ title: "VPN kill switch explained: a beginner's guide"
 categories: [security, privacy, tutorial]
 tags: [vpn, vpn-kill-switch, online-privacy, ip-protection, network-security, public-wifi]
 description: "Learn how a VPN kill switch works, the types available, why it matters, and how to enable it so your real IP stays hidden if the VPN drops."
-image: /insights/assets/images/post-images/vpn-kill-switch-guide.png
 ---
 
-A Virtual Private Network (VPN) is designed to keep your online privacy intact. It conceals your authentic IP address and encrypts your online activities by linking your device to a VPN server safely. This requires considerable effort from third parties trying to track your online activities.
-
-![Illustration of a VPN kill switch cutting off internet access when the VPN connection drops](/insights/assets/images/post-images/vpn-kill-switch-guide.png)
+**A** Virtual Private Network (VPN) is designed to keep your online privacy intact. It conceals your authentic IP address and encrypts your online activities by linking your device to a VPN server safely. This requires considerable effort from third parties trying to track your online activities.
 
 A laptop on a desk with a glowing padlock shield between it and the internet, a severed connection cable in front of the shield, flat vector style, blue tones.
 
