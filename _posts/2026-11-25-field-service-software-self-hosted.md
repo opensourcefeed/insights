@@ -4,7 +4,6 @@ title: "Self-hosted or SaaS field service software for small teams"
 categories: [open-source, tools, business]
 tags: [field-service-software, self-hosted, saas, odoo, erpnext, open-source-erp, small-business]
 description: "Compare open-source field service software like Odoo and ERPNext with SaaS tools. See the real cost of self-hosting for a small team."
-image: /insights/assets/images/post-images/field-service-software-self-hosted.png
 ---
 
 Small companies that send technicians into the field (HVAC, plumbing, cleaning, pest control, equipment repair) all need roughly the same software: a schedule, a map, a mobile app for the crew, job reports and some link to invoicing. The SaaS market for this is crowded. So is the open-source side, at least on paper.
