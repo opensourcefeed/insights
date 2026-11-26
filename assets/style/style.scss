@@ -334,6 +334,8 @@ footer.site-footer {
 
 /* Navigation */
 .site-navbar {
+  position: relative;
+  z-index: 50;
   margin: 0.85rem 0.85rem 0;
   padding: 0.45rem 0.75rem;
   background: rgba(255, 255, 255, 0.72);
