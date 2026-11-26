@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Crisis management service for open-source security leaks"
+title: "What a Crisis Management Service Does When an Open-Source Project Faces a Security Disclosure Gone Wrong"
 categories: [security, open-source, tools]
 tags: [crisis-management, security-disclosure, vulnerability-disclosure, cve, github-security-advisories, embargo, open-source-security, incident-response]
 description: "A crisis management service helps open-source maintainers handle leaked or botched security disclosures, from first statements to CVEs and forums."
