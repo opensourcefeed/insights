@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Remote Windows desktops for automation and testing"
+title: "Remote Windows Virtual Desktops for Automation and Testing: Setup & Security Tips"
 categories: [windows, security, tutorial]
 tags: [remote-desktop, windows-rdp, test-automation, rdp-security, virtual-desktop, sandbox, hardening]
 description: "Set up a remote Windows virtual desktop for automation and testing, and harden it with NLA, MFA, IP allowlisting, patching and audit logging."
